@@ -1,0 +1,9 @@
+Aula 18: Imagens
+
+img = tag da imagem
+src = caminho da imagem
+alt = texto alternativo
+
+
+squoosh
+unsplash

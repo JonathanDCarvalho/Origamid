@@ -1,0 +1,5 @@
+Position
+
+fixed: fixo o elemento na tela
+absolute: tira o elemento do seu fluxo
+relative: move o elemento de acordo de onde o elemento nasceu

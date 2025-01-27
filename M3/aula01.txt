@@ -1,0 +1,7 @@
+Top, Right, Bottom, Left
+
+padding = padding top, right, bottom, left
+margin = margin top, right, bottom, left
+
+margin-block-start = margin aplicada de acordo com o modo de escrita do documento
+margin-block-end = margin aplicada de acordo com o modo de escrita do documento

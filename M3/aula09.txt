@@ -1,0 +1,14 @@
+Flexbox
+
+display: Flexbox
+
+- Os filhos passam a ter um tamanho fléxivel e ficam um ao lado do outro.
+
+flex-grow: 0 ou 1, quando for 1 vai crescer igual o grid 1fr
+
+flex-basis: define um valor para quanto irá crescer se colocar 0, será auto
+
+flex-shrink: deixa ou não deixa quebrar a palavra
+
+flex: atalho
+flex: 1;
