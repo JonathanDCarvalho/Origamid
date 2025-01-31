@@ -1,3 +1,12 @@
 Semântica:
 
 - Acessibilidade
+- Landmarks
+
+<main>
+<nav>
+<section>
+<article>
+<aside>
+<footer>
+<header>
