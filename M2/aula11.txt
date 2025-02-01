@@ -1,0 +1,9 @@
+Estilos do Browser
+
+O Browser por padrão já tem alguns estilos configurados, como margem, padding, etc... até mesmo as tags como h1, p, etc...
+
+inherit (herança)
+
+Existem propriedades do CSS que são passadas do pai para o filho como uma herança (inherit)
+
+Exemplo: color, font-size, font-family e outras.

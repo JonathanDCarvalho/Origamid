@@ -1,0 +1,8 @@
+Caminho (Path)
+
+Absoluto (Externo)
+Relativo (Interno)
+
+/index.html -> Arquivo index.html no diretório raiz.
+
+

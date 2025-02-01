@@ -1,0 +1,5 @@
+<!DOCTYPE html> - Versão 5
+
+<html> -> tag html
+<head> -> cabeça, onde vai todas as configurações
+<body> -> corpo, onde vai todo o conteúdo

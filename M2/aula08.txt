@@ -1,0 +1,7 @@
+Seletores CSS:
+
+id: #
+class: .
+
+usando a vírgula, você pode selecionar vários elementos
+

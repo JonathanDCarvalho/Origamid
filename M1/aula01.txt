@@ -1,0 +1,25 @@
+HTML -> HyperText Markup Language
+Serve para Marcarmos o conteúdo e dar semântica(sentido).
+Arquivo com formato .html
+
+CSS -> Cascading Style Sheets (CSS)
+Define o estilo do documento
+Arquivo com formato .css
+
+Exemplo: 
+
+p {
+  color: blue;
+}
+
+JavaScript
+Linguagem de script (programação)
+Altera o comportamento do documento (front-end)
+Arquivo com formato .js
+
+Exemplo:
+
+function mudar() {
+  text.style.color = 'red';
+}
+texto.add.EventListener("click", mudar);

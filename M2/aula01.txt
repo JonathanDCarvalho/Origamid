@@ -1,0 +1,9 @@
+Tag:
+
+As tag's (etiquetas) servem para marcarmos o conteúdo no HTML. Geralmente abrimos <a> e fechamos </a> após o conteúdo.
+
+case insentitive, mas é boa prática escrever com minúsculas <html>.
+
+Tag: Abertura, Atributo, Conteúdo, 
+
+<a href='https://google.com.br'>Link</a>
