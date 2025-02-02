@@ -3,10 +3,39 @@ Semântica:
 - Acessibilidade
 - Landmarks
 
-<main>
-<nav>
+<main> // Tag Principal do Site
+<nav> // Tag de Navegação
 <section>
 <article>
-<aside>
-<footer>
-<header>
+<aside> // conteúdo extra do site, normalmente uma região separada.
+<footer> // rodapé da página
+<header> // cabeçalho da página (banner)
+
+section e article são muito parecidas
+
+no geral article são postagens que fazem sentido fora de contexto, exemplo uma lista de compras. o Article por padrão cria uma Landmark(ponto de referência).
+
+section no geral tem o mesmo propósito da tag Article que é encapsular um conteúdo do site, porém a grande diferença é que o conteúdo em si colocado no section, se colocarmos ele em um contexto diferente, ele tem sentido, diferente do article. A Section também não cria uma área de referência (landmark).
+
+Listas:
+
+<ul></ul> Listas desordenadas
+<ol></ol> Listas Ordernadas
+<dl></dl> Description List
+
+<dl>
+  <dt>
+  <dd>
+  <dt>
+  <dd>
+</dl>
+
+<blockquote cite=""> marcar uma citação de uma pessoa
+
+<q> citação interna dentro de um paragráfo </q> da para usar o cite tbm.
+
+<cite> usados somente para citação de obras, filmes, músicas, qualquer coisa que tenha direito autoral </cite>
+
+<em> utilizada para dar enfâse em uma palavra ou frase do conteúdo </em>
+
+<strong> marcar uma parte importante do conteúdo </strong>

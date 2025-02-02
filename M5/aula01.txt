@@ -1,0 +1,54 @@
+Unidades de Medidas:
+
+- pixel (px);
+- rem
+- em
+
+- vh (viewport height)
+- vw (viewport width)
+
+Tipografia:
+
+font-size
+font-family
+font-weight
+font-style
+line-height
+text-decoration
+text-transform
+text-indent // indentar a primeira linha
+text-align
+text-shadow // sombra no texto (nunca vi usar), bem incomum
+
+text-shadow: eixo x, eixo y, espalhamento da sombra, cor.
+
+letter-spacing // espaçamento entre as letras
+
+
+Pseudo-Classes
+
+Estado:
+
+:hover
+:focus
+:active
+:visited
+
+
+Seletores:
+
+:first-child
+:last-child
+:nth-child(4)
+:nth-child(odd) // ímpar
+:nth-child(even) // par
+:nth-child(4n) // de 4 em 4
+
+:not
+
+
+Pseudo Elements:
+
+::before e ::after
+::first-line
+::first-letter

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Background</title>
+		<style>
+			.pattern {
+				height: 300px;
+				background-color: lightcoral;
+				background-image: url(img/pattern.svg);
+				background-repeat: repeat;
+				/* background-size: 100px; */
+			}
+
+      .linear {
+        height: 200px;
+        background-image: linear-gradient(to left, lightblue, lightcoral);
+      }
+
+      .radial {
+        height: 200px;
+        background-image: radial-gradient(circle, blue, red, green);
+      }
+		</style>
+	</head>
+	<body>
+		<div class="linear"></div>
+    <div class="radial"></div>
+
+		<div class="bicicleta">
+			<h1>Nossas Bicicletas</h1>
+		</div>
+
+		<div class="pattern"></div>
+	</body>
+</html>

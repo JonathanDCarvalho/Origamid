@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pseudo Elements</title>
+	</head>
+  <style>
+    h1::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 4px;
+      background-color: #caf;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    li::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: linear-gradient(#caf, #fff);
+      border: 2px solid #caf;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    p::first-line {
+      font-weight: bold;
+    }
+
+    p::first-letter {
+      font-size: 2rem;
+      color: blue;
+    }
+  </style>
+	<body>
+		<h1>Nossos Produtos</h1>
+
+		<ul>
+			<li>Sobre</li>
+			<li>Produtos</li>
+			<li>Contato</li>
+		</ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quo delectus aut adipisci amet velit. Vitae omnis quibusdam voluptas rem facilis ducimus ratione, tempore iusto, ut assumenda veritatis laborum nisi!</p>
+	</body>
+</html>
