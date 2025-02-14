@@ -1,0 +1,21 @@
+NPM
+
+- Gerenciador de Pacfotes
+permite instalarmos diferentes programas e versões utilizando o comando $ npm.
+
+instalando globalmente:
+
+npm install -g NOMEDOPACOTE
+
+remove globalmente:
+
+npm remove -g NOMEDOPACOTE
+
+
+CLEAN CSS CLI = formata o css para comprimir o máximo possível, ela espaços, etc...
+
+npm install -g clean-css-cli 
+
+how to use
+
+cleancss
