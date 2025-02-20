@@ -1,1 +1,12 @@
 form
+
+especificidade:
+
+- id (1,0,0)
+- class (0,1,0)
+- tag (0,0,1)
+
+Propriedades Customizadas
+
+variáveis CSS
+
