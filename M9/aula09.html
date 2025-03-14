@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS</title>
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+
+			h1,
+			h2,
+			p {
+				margin: 0;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 20px;
+			}
+
+			.container h1 {
+				font-size: 40px;
+				line-height: 50px;
+				font-weight: 300;
+				color: #06f;
+				margin-bottom: 40px;
+			}
+
+			.seguros {
+				display: flex;
+				gap: 60px;
+			}
+
+			.seguros h2 {
+				font-size: 40px;
+				line-height: 50px;
+				font-weight: 300;
+				color: #707070;
+			}
+
+			.seguros p {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: 300;
+				margin-bottom: 20px;
+			}
+
+			.btn {
+				background-color: #06f;
+				color: #fff;
+				text-decoration: none;
+				border-radius: 5px;
+				padding: 8px 16px;
+				font-size: 20px;
+				line-height: 30px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="container">
+			<h1>Seguros Bikcraft</h1>
+			<div class="seguros">
+				<div>
+					<h2>Ouro</h2>
+					<p>O plano Ouro garante todos os beneficios do plano Prata e mais.</p>
+					<a href="#" class="btn">Comprar Plano</a>
+				</div>
+				<div>
+					<h2>Prata</h2>
+					<p>O plano Prata te dá direito aos principais beneficios da Bikcraft.</p>
+					<a href="#" class="btn">Comprar Plano</a>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

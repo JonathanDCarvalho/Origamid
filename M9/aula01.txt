@@ -10,3 +10,9 @@ Propriedades Customizadas
 
 variáveis CSS
 
+---------------------------------
+
+CSS Utilitário 1:
+
+Classes com padrões de CSS já definidos: Bootstrap e Tailwind
+
