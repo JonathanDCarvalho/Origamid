@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Invoice</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0px;
+				box-sizing: border-box;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			img {
+				display: block;
+				max-width: 100%;
+				object-fit: cover;
+			}
+
+			.container {
+				max-width: 75rem;
+				margin: 0 auto;
+				padding: 10px 40px;
+			}
+
+			.container-payment {
+				max-width: 75rem;
+				margin: 0 auto;
+				padding: 0px 40px;
+			}
+
+			.padding-top {
+				padding-top: 10px;
+			}
+
+			.padding-bottom {
+				padding-bottom: 20px;
+			}
+
+			.tableHeader {
+				width: 100%;
+				table-layout: fixed;
+			}
+
+			.tableHeader td:nth-child(1) {
+				width: 160px;
+			}
+
+			.tableHeader td {
+				padding: 0;
+			}
+
+			.espacamento {
+				margin-left: 45px;
+			}
+
+			.tableDate {
+				width: auto;
+				margin-left: auto;
+				margin-right: 0;
+				border: 1px solid black;
+				border-collapse: collapse;
+				table-layout: fixed;
+			}
+
+			.tableDate th,
+			.tableDate td {
+					border: 1px solid black;
+					padding: 10px;
+					text-align: center;
+			}
+
+			.tableDate th {
+					font-size: 12px;
+					font-weight: normal;
+			}
+
+			.tableDate td {
+					font-size: 12px;
+			}
+
+			.billTo {
+				width: 50%;
+			}
+
+			.billTo th {
+				text-align: left;
+			}
+
+			.billTo td {
+				text-align: left;
+				font-size: 14px;
+			}
+
+			.cnpj {
+				width: 50%;
+				border: 1px solid black;
+				border-collapse: collapse;
+				margin-left: auto;
+			}
+
+			.cnpj th,
+			.cnpj td {
+				padding: 5px;
+				text-align: center;
+			}
+
+			.cnpj th {
+				border-bottom: 1px solid black;
+				border-left: 1px solid black;
+			}
+
+			.cnpj td {
+				border-left: 1px solid black;
+				font-size: 14px;
+			}
+
+			.tableItem {
+				width: 100%;
+				border: 1px solid black;
+				border-collapse: collapse;
+				margin-bottom: 5px;
+			}
+
+			.tableItem td {
+				padding: 5px;
+				text-align: left;
+			}
+
+			.tableItem th {
+				border: 1px solid black;
+				padding: 5px;
+				text-align: center;
+			}
+
+			.tableItem td {
+				font-size: 14px;
+				border-left: 1px solid black;
+			}
+
+			.tableItem tbody td:nth-child(4) {
+				text-align: center;
+				width: 20%;
+			}
+
+			.tableItem tbody td:nth-child(3) {
+				text-align: center;
+				width: 10%;
+			}
+
+			.tableItem tbody td:nth-child(2) {
+				text-align: left;
+				width: 50%;
+			}
+
+			.tableItem tbody td:nth-child(1) {
+				text-align: center;
+				width: 20%;
+			}
+
+			.totalInvoice {
+				width: 30%;
+				border: 1px solid black;
+				border-collapse: collapse;
+				margin-left: auto;
+			}
+
+			.totalInvoice td {
+				padding: 5px;
+			}
+
+			.negrito {
+				font-weight: bold;
+				font-size: 18px;
+			}
+
+			.negrito-normal {
+				font-weight: bold;
+				font-size: 15px;
+			}
+
+			.noWrap {
+				white-space: nowrap;
+			}
+
+			.text-sm {
+				font-size: 13px;
+			}
+
+			.text-xs {
+				font-size: 12px;
+			}
+
+			.text-italic {
+				font-style: italic;
+			}
+
+			.text-normal {
+				font-weight: normal;
+				font-size: 16px;
+			}
+
+			.text-normal-currency {
+				font-weight: normal;
+				font-size: 14px;
+			}
+
+			.font {
+				padding-bottom: 10px;
+				font-size: 20px;
+			}
+
+			.numPurchaseOrder {
+				text-align: center;
+			}
+
+			.paymentTerms {
+				width: 100%;
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+
+			.paymentTerms td {
+				padding: 1px;
+				text-align: left;
+			}
+
+			.paymentTerms th {
+				border: 1px solid black;
+				padding: 5px;
+				text-align: center;
+			}
+
+			.paymentTerms td {
+				font-size: 14px;
+				border-left: 1px solid black;
+			}
+
+			.paymentTerms thead th:nth-child(1) {
+				text-align: left;
+				width: 100%;
+				font-weight: normal;
+			}
+
+			.eletronic {
+				width: 100%;
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+
+			.eletronic td {
+				padding: 1px;
+				text-align: left;
+				font-size: 14px;
+				border-left: 1px solid black;
+			}
+
+			.cards {
+				width: 100%;
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+
+			.cards td {
+				padding: 1px;
+				text-align: left;
+				font-size: 14px;
+				border-left: 1px solid black;
+			}
+
+			.semBorda {
+				border-bottom: none;
+			}
+
+			.semBordaTop {
+				border-top: none;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="container">
+			<table class="tableHeader">
+				<tr>
+					<td><img src="https://fluig-library.vercel.app/Logos/502px_Logo_RGB-Color-Baseline_transparent_background.png" alt="Bureau Veritas" /></td>
+					<td >
+						<p>Bureau Veritas Consumer Products Service </br>100 Northpointe Parkway</br>Buffalo NY</br>14228</br>United States</p>
+					</td>
+					<td class="tableDate-container">
+						<table class="tableDate espacamento noWrap">
+							<thead>
+								<tr>
+									<th>Invoice Date</th>
+									<th style="font-weight: bold;">Invoice No.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>{{invoiceDate}}</td>
+									<td class="negrito">{{invoiceNumber}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section class="container padding-bottom">
+			<table class="billTo">
+				<tbody class="negrito">
+					<tr>
+						<td>{{corporateNameInvoicing}}</td>
+					</tr>
+					<tr>
+						<td>{{numberInvoicing}}, {{streetInvoicing}}</td>
+					</tr>
+					<tr>
+						<td>{{cityInvoicing}}, {{stateInvoicing}}</td>
+					</tr>
+					<tr>
+						<td>{{zipCodeInvoicing}} {{countryInvoicing}}</td>
+					</tr>
+					<tr>
+						<td>Contact: {{contactInvoicing}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<div class="numPurchaseOrder container">
+			<h2 class="negrito">P.O No.<span class="text-normal"> {{numPurchaseOrder}}</span></h2>
+		</div>
+		
+		<section class="container-payment padding-top">
+			<table class="tableItem">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Description</th>
+						<th>Quantity</th>
+						<th>Amount</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each item}}
+					<tr>
+						<td>{{this.codigo}}</td>
+						<td class="text-sm">{{{noteDescription}}}</td>
+						<td class="text-sm">1.00</td>
+						<td class="text-sm">{{totalAmount}}</td>
+					</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</section>
+		<section class="container-payment padding-bottom">
+			<table class="totalInvoice">
+				<tr >
+					<td class="negrito-normal">Total<span class="text-normal-currency">(USD)</span></td>
+					<td>{{totalAmount}}</td>
+				</tr>
+			</table>
+		</section>
+
+		<section class="container-payment">
+			<table class="paymentTerms semBorda">
+				<thead>
+					<tr>
+						<th>Payment Terms: {{terms}}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Thank you. Please pay us from this invoice. SEE FULL TERMS AND CONDITIONS ON REVERSE SIDE</td>
+					</tr>
+					<tr>
+						<td>TAX ID # : 58-1660400</td>
+					</tr>
+					<tr>
+						<td>Questions : Please contact us at 978-486-8880</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="container-payment">
+			<table class="eletronic">
+				<tbody>
+					<tr>
+						<td>ELECTRONIC PAYMENTS: Bureau Veritas CPS, Inc. Account Nbr: 1459439514 ABA Nbr: 122000661 (ACH) or 026009593 (Wires) </td>
+					</tr>
+					<tr>
+						<td>Swift Code: BOFAUS6S Bank info: Bank of America, 450 B Street, San Diego, CA 92101 </td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="container-payment padding-bottom">
+			<table class="cards semBordaTop">
+				<tbody>
+					<tr class="text-xs">
+						<td>PLEASE REMEMBER TO REFERENCE THE INVOICE NUMBERS BEING PAID. MASTERCARD, VISA and AMERICAN EXPRESS</td>
+					</tr>
+					<tr class="text-xs">
+						<td>CARDS ACCEPTED: Send email to ARCPS@bureauveritas.com for additional information</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</body>
+</html>
